@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -33,7 +33,7 @@ jobs:
         run: yarn build
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3  # Corrected to v3
+        uses: actions/upload-artifact@v4  
         with:
           name: github-pages
           path: dist
@@ -43,7 +43,7 @@ jobs:
     needs: build
     environment:
       name: github-pages
-      # Removed the URL as it's not necessary if it's not provided by the deployment step
+    
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4

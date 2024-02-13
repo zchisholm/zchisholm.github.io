@@ -1,9 +1,13 @@
 {
+  "homepage": "https://zchisholm.github.io/zchisholm.github.io",
+  "description": "My personal website",
   "name": "zchisholm.github.io",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "yarn run build",
+    "depoly": "git-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",

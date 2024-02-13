@@ -1,7 +1,5 @@
 {
   "name": "zchisholm.github.io",
-  "homepage": "https://zchisholm.github.io/",
-  "description": "My personal website",
   "private": true,
   "version": "0.0.0",
   "type": "module",

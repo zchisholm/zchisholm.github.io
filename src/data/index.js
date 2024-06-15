@@ -30,7 +30,7 @@ const experiences = [
     details: [
       "Analyzed API DevOps pipeline and implementd security tools as needed to improve to over securuity of our product.",
       "Created easy to read documentation of security tools to help developers better understand security in their daily work.",
-      "Demod and trained developers on how to use security tools to improve the security of their code.",
+      "Demod and trained developers on how to use security tools to improve the security of their code...",
     ],
   },
   {

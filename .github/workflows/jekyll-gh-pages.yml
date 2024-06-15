@@ -36,13 +36,13 @@ jobs:
         run: ls -la
 
       - name: List build directory
-        run: ls -la build
+        run: ls -la dist
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4  
         with:
           name: github-pages
-          path: build 
+          path: dist
 
   deploy:
     runs-on: ubuntu-latest
